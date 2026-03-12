@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-12T01:23:41.524Z",
+  "fetchedAt": "2026-03-12T03:49:10.564Z",
   "source": "GitHub Official Trending",
   "mode": "official",
   "since": "daily",
@@ -8,6 +8,22 @@
   "note": "官方页面当前只返回 9 个项目。",
   "insights": {
     "topics": [
+      {
+        "name": "llm",
+        "count": 2
+      },
+      {
+        "name": "llama",
+        "count": 2
+      },
+      {
+        "name": "agent",
+        "count": 2
+      },
+      {
+        "name": "ai",
+        "count": 2
+      },
       {
         "name": "agent-memory",
         "count": 1
@@ -22,22 +38,6 @@
       },
       {
         "name": "knowledge-graph",
-        "count": 1
-      },
-      {
-        "name": "llms",
-        "count": 1
-      },
-      {
-        "name": "multi-agent-simulation",
-        "count": 1
-      },
-      {
-        "name": "public-opinion-analysis",
-        "count": 1
-      },
-      {
-        "name": "python3",
         "count": 1
       }
     ],
@@ -97,8 +97,8 @@
       "readmeUrl": "https://github.com/msitarzewski/agency-agents#readme",
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
-      "totalStars": 30171,
-      "forks": 4747,
+      "totalStars": 30657,
+      "forks": 4805,
       "starsToday": 6167,
       "starsWeek": 0,
       "starsMonth": 0,
@@ -109,13 +109,13 @@
       "rank": 1,
       "topics": [],
       "homepage": "",
-      "openIssues": 27,
-      "watchers": 290,
+      "openIssues": 29,
+      "watchers": 296,
       "license": "MIT",
       "defaultBranch": "main",
-      "updatedAt": "2026-03-12T01:23:13Z",
+      "updatedAt": "2026-03-12T03:49:03Z",
       "createdAt": "2025-10-13T12:12:29Z",
-      "stars": 30171,
+      "stars": 30657,
       "readmeExcerpt": "",
       "shortDescription": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninja…",
       "chineseCard": {
@@ -134,7 +134,8 @@
       },
       "trendScore": 84,
       "badgeText": "★ +6,167 今日 Star",
-      "topicLinks": []
+      "topicLinks": [],
+      "ownerCountry": "未知"
     },
     {
       "owner": "666ghj",
@@ -144,8 +145,8 @@
       "readmeUrl": "https://github.com/666ghj/MiroFish#readme",
       "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
       "language": "Python",
-      "totalStars": 16827,
-      "forks": 1791,
+      "totalStars": 17083,
+      "forks": 1817,
       "starsToday": 2907,
       "starsWeek": 0,
       "starsMonth": 0,
@@ -167,13 +168,13 @@
         "swarm-intelligence"
       ],
       "homepage": "https://mirofish.ai",
-      "openIssues": 82,
-      "watchers": 79,
+      "openIssues": 86,
+      "watchers": 78,
       "license": "AGPL-3.0",
       "defaultBranch": "main",
-      "updatedAt": "2026-03-12T01:22:24Z",
+      "updatedAt": "2026-03-12T03:49:04Z",
       "createdAt": "2025-11-26T04:23:02Z",
-      "stars": 16827,
+      "stars": 17083,
       "readmeExcerpt": "",
       "shortDescription": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
       "chineseCard": {
@@ -187,7 +188,7 @@
         "heat": 47,
         "community": 87,
         "activity": 100,
-        "maturity": 88,
+        "maturity": 89,
         "focus": 100
       },
       "trendScore": 77,
@@ -233,7 +234,8 @@
           "name": "swarm-intelligence",
           "url": "https://github.com/topics/swarm-intelligence"
         }
-      ]
+      ],
+      "ownerCountry": "未知"
     },
     {
       "owner": "promptfoo",
@@ -243,8 +245,8 @@
       "readmeUrl": "https://github.com/promptfoo/promptfoo#readme",
       "description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with command line and CI/CD integration.",
       "language": "TypeScript",
-      "totalStars": 12574,
-      "forks": 1158,
+      "totalStars": 12655,
+      "forks": 1165,
       "starsToday": 718,
       "starsWeek": 0,
       "starsMonth": 0,
@@ -253,24 +255,127 @@
         "daily"
       ],
       "rank": 3,
+      "topics": [
+        "ci",
+        "ci-cd",
+        "cicd",
+        "evaluation",
+        "evaluation-framework",
+        "llm",
+        "llm-eval",
+        "llm-evaluation",
+        "llm-evaluation-framework",
+        "llmops",
+        "pentesting",
+        "prompt-engineering",
+        "prompt-testing",
+        "prompts",
+        "rag",
+        "red-teaming",
+        "testing",
+        "vulnerability-scanners"
+      ],
+      "homepage": "https://promptfoo.dev",
+      "openIssues": 249,
+      "watchers": 37,
+      "license": "MIT",
+      "defaultBranch": "main",
+      "updatedAt": "2026-03-12T03:48:21Z",
+      "createdAt": "2023-04-28T15:48:49Z",
+      "stars": 12655,
+      "readmeExcerpt": "",
       "shortDescription": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI…",
       "chineseCard": {
         "category": "AI 评测 / 安全",
         "what": "用于测试 Prompt、Agent 和 RAG 应用的评测与安全检测工具。",
         "who": "适合做大模型应用测试、红队评估和上线前质量校验的团队。",
-        "highlight": "覆盖提示词评测、对抗测试、漏洞扫描或 CI 集成。 常见技术栈：TypeScript。",
+        "highlight": "覆盖提示词评测、对抗测试、漏洞扫描或 CI 集成。 常见技术栈：TypeScript。 相关主题：#ci、#ci-cd、#cicd。",
         "official": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for…"
       },
       "radar": {
         "heat": 12,
         "community": 84,
-        "activity": 0,
-        "maturity": 66,
-        "focus": 20
+        "activity": 100,
+        "maturity": 86,
+        "focus": 100
       },
-      "trendScore": 35,
+      "trendScore": 64,
       "badgeText": "★ +718 今日 Star",
-      "topicLinks": []
+      "topicLinks": [
+        {
+          "name": "ci",
+          "url": "https://github.com/topics/ci"
+        },
+        {
+          "name": "ci-cd",
+          "url": "https://github.com/topics/ci-cd"
+        },
+        {
+          "name": "cicd",
+          "url": "https://github.com/topics/cicd"
+        },
+        {
+          "name": "evaluation",
+          "url": "https://github.com/topics/evaluation"
+        },
+        {
+          "name": "evaluation-framework",
+          "url": "https://github.com/topics/evaluation-framework"
+        },
+        {
+          "name": "llm",
+          "url": "https://github.com/topics/llm"
+        },
+        {
+          "name": "llm-eval",
+          "url": "https://github.com/topics/llm-eval"
+        },
+        {
+          "name": "llm-evaluation",
+          "url": "https://github.com/topics/llm-evaluation"
+        },
+        {
+          "name": "llm-evaluation-framework",
+          "url": "https://github.com/topics/llm-evaluation-framework"
+        },
+        {
+          "name": "llmops",
+          "url": "https://github.com/topics/llmops"
+        },
+        {
+          "name": "pentesting",
+          "url": "https://github.com/topics/pentesting"
+        },
+        {
+          "name": "prompt-engineering",
+          "url": "https://github.com/topics/prompt-engineering"
+        },
+        {
+          "name": "prompt-testing",
+          "url": "https://github.com/topics/prompt-testing"
+        },
+        {
+          "name": "prompts",
+          "url": "https://github.com/topics/prompts"
+        },
+        {
+          "name": "rag",
+          "url": "https://github.com/topics/rag"
+        },
+        {
+          "name": "red-teaming",
+          "url": "https://github.com/topics/red-teaming"
+        },
+        {
+          "name": "testing",
+          "url": "https://github.com/topics/testing"
+        },
+        {
+          "name": "vulnerability-scanners",
+          "url": "https://github.com/topics/vulnerability-scanners"
+        }
+      ],
+      "ownerCountry": "未知"
     },
     {
       "owner": "obra",
@@ -280,8 +385,8 @@
       "readmeUrl": "https://github.com/obra/superpowers#readme",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "totalStars": 78097,
-      "forks": 6039,
+      "totalStars": 78329,
+      "forks": 6059,
       "starsToday": 1483,
       "starsWeek": 0,
       "starsMonth": 0,
@@ -292,13 +397,13 @@
       "rank": 4,
       "topics": [],
       "homepage": "",
-      "openIssues": 124,
-      "watchers": 372,
+      "openIssues": 125,
+      "watchers": 373,
       "license": "MIT",
       "defaultBranch": "main",
-      "updatedAt": "2026-03-12T01:21:53Z",
+      "updatedAt": "2026-03-12T03:49:09Z",
       "createdAt": "2025-10-09T19:45:18Z",
-      "stars": 78097,
+      "stars": 78329,
       "readmeExcerpt": "",
       "shortDescription": "An agentic skills framework & software development methodology that works.",
       "chineseCard": {
@@ -317,7 +422,8 @@
       },
       "trendScore": 60,
       "badgeText": "★ +1,483 今日 Star",
-      "topicLinks": []
+      "topicLinks": [],
+      "ownerCountry": "未知"
     },
     {
       "owner": "fishaudio",
@@ -327,8 +433,8 @@
       "readmeUrl": "https://github.com/fishaudio/fish-speech#readme",
       "description": "SOTA Open Source TTS",
       "language": "Python",
-      "totalStars": 25809,
-      "forks": 2178,
+      "totalStars": 25897,
+      "forks": 2183,
       "starsToday": 313,
       "starsWeek": 0,
       "starsMonth": 0,
@@ -347,13 +453,13 @@
         "vqvae"
       ],
       "homepage": "https://speech.fish.audio",
-      "openIssues": 30,
+      "openIssues": 29,
       "watchers": 144,
       "license": "NOASSERTION",
       "defaultBranch": "main",
-      "updatedAt": "2026-03-12T01:22:58Z",
+      "updatedAt": "2026-03-12T03:49:03Z",
       "createdAt": "2023-10-10T03:16:51Z",
-      "stars": 25809,
+      "stars": 25897,
       "readmeExcerpt": "",
       "shortDescription": "SOTA Open Source TTS",
       "chineseCard": {
@@ -401,7 +507,8 @@
           "name": "vqvae",
           "url": "https://github.com/topics/vqvae"
         }
-      ]
+      ],
+      "ownerCountry": "未知"
     },
     {
       "owner": "virattt",
@@ -411,8 +518,8 @@
       "readmeUrl": "https://github.com/virattt/ai-hedge-fund#readme",
       "description": "An AI Hedge Fund Team",
       "language": "Python",
-      "totalStars": 48168,
-      "forks": 8387,
+      "totalStars": 48232,
+      "forks": 8396,
       "starsToday": 636,
       "starsWeek": 0,
       "starsMonth": 0,
@@ -421,6 +528,16 @@
         "daily"
       ],
       "rank": 6,
+      "topics": [],
+      "homepage": "",
+      "openIssues": 68,
+      "watchers": 588,
+      "license": "",
+      "defaultBranch": "main",
+      "updatedAt": "2026-03-12T03:49:06Z",
+      "createdAt": "2024-11-29T16:30:01Z",
+      "stars": 48232,
+      "readmeExcerpt": "",
       "shortDescription": "An AI Hedge Fund Team",
       "chineseCard": {
         "category": "金融实验 / 多代理",
@@ -432,13 +549,14 @@
       "radar": {
         "heat": 10,
         "community": 96,
-        "activity": 0,
+        "activity": 100,
         "maturity": 77,
         "focus": 20
       },
-      "trendScore": 38,
+      "trendScore": 53,
       "badgeText": "★ +636 今日 Star",
-      "topicLinks": []
+      "topicLinks": [],
+      "ownerCountry": "未知"
     },
     {
       "owner": "alibaba",
@@ -448,8 +566,8 @@
       "readmeUrl": "https://github.com/alibaba/page-agent#readme",
       "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
       "language": "TypeScript",
-      "totalStars": 4782,
-      "forks": 371,
+      "totalStars": 4949,
+      "forks": 392,
       "starsToday": 1215,
       "starsWeek": 0,
       "starsMonth": 0,
@@ -469,13 +587,13 @@
         "web"
       ],
       "homepage": "https://alibaba.github.io/page-agent/",
-      "openIssues": 26,
-      "watchers": 11,
+      "openIssues": 29,
+      "watchers": 13,
       "license": "MIT",
       "defaultBranch": "main",
-      "updatedAt": "2026-03-12T01:23:37Z",
+      "updatedAt": "2026-03-12T03:48:15Z",
       "createdAt": "2025-09-23T09:30:17Z",
-      "stars": 4782,
+      "stars": 4949,
       "readmeExcerpt": "",
       "shortDescription": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
       "chineseCard": {
@@ -487,9 +605,9 @@
       },
       "radar": {
         "heat": 20,
-        "community": 75,
+        "community": 76,
         "activity": 100,
-        "maturity": 78,
+        "maturity": 79,
         "focus": 100
       },
       "trendScore": 64,
@@ -527,7 +645,8 @@
           "name": "web",
           "url": "https://github.com/topics/web"
         }
-      ]
+      ],
+      "ownerCountry": "未知"
     },
     {
       "owner": "NousResearch",
@@ -537,8 +656,8 @@
       "readmeUrl": "https://github.com/NousResearch/hermes-agent#readme",
       "description": "The agent that grows with you",
       "language": "Python",
-      "totalStars": 5271,
-      "forks": 609,
+      "totalStars": 5416,
+      "forks": 621,
       "starsToday": 1234,
       "starsWeek": 0,
       "starsMonth": 0,
@@ -564,7 +683,8 @@
       },
       "trendScore": 35,
       "badgeText": "★ +1,234 今日 Star",
-      "topicLinks": []
+      "topicLinks": [],
+      "ownerCountry": "未知"
     },
     {
       "owner": "AstrBotDevs",
@@ -574,8 +694,8 @@
       "readmeUrl": "https://github.com/AstrBotDevs/AstrBot#readme",
       "description": "Agentic IM Chatbot infrastructure that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
       "language": "Python",
-      "totalStars": 21082,
-      "forks": 1517,
+      "totalStars": 21439,
+      "forks": 1531,
       "starsToday": 342,
       "starsWeek": 0,
       "starsMonth": 0,
@@ -584,24 +704,117 @@
         "daily"
       ],
       "rank": 9,
+      "topics": [
+        "agent",
+        "ai",
+        "chatbot",
+        "chatgpt",
+        "discord",
+        "docker",
+        "gemini",
+        "gpt",
+        "llama",
+        "llm",
+        "mcp",
+        "openai",
+        "python",
+        "qq",
+        "qqbot",
+        "telegram"
+      ],
+      "homepage": "https://astrbot.app",
+      "openIssues": 697,
+      "watchers": 64,
+      "license": "AGPL-3.0",
+      "defaultBranch": "master",
+      "updatedAt": "2026-03-12T03:49:07Z",
+      "createdAt": "2022-12-08T13:27:46Z",
+      "stars": 21439,
+      "readmeExcerpt": "",
       "shortDescription": "Agentic IM Chatbot infrastructure that integrates lots of IM platforms, LLMs, plugins and…",
       "chineseCard": {
         "category": "聊天机器人 / 助手",
         "what": "用于搭建多平台聊天机器人和 AI 助手的基础设施。",
         "who": "适合做 IM 机器人、插件扩展和多平台助手接入的开发者。",
-        "highlight": "支持插件、消息平台接入和多模型集成。 常见技术栈：Python。",
+        "highlight": "支持插件、消息平台接入和多模型集成。 常见技术栈：Python。 相关主题：#agent、#ai、#chatbot。",
         "official": "Agentic IM Chatbot infrastructure that integrates lots of IM platforms, LLMs, plugins a…"
       },
       "radar": {
         "heat": 6,
-        "community": 88,
-        "activity": 0,
-        "maturity": 69,
-        "focus": 20
+        "community": 89,
+        "activity": 100,
+        "maturity": 89,
+        "focus": 100
       },
-      "trendScore": 34,
+      "trendScore": 63,
       "badgeText": "★ +342 今日 Star",
-      "topicLinks": []
+      "topicLinks": [
+        {
+          "name": "agent",
+          "url": "https://github.com/topics/agent"
+        },
+        {
+          "name": "ai",
+          "url": "https://github.com/topics/ai"
+        },
+        {
+          "name": "chatbot",
+          "url": "https://github.com/topics/chatbot"
+        },
+        {
+          "name": "chatgpt",
+          "url": "https://github.com/topics/chatgpt"
+        },
+        {
+          "name": "discord",
+          "url": "https://github.com/topics/discord"
+        },
+        {
+          "name": "docker",
+          "url": "https://github.com/topics/docker"
+        },
+        {
+          "name": "gemini",
+          "url": "https://github.com/topics/gemini"
+        },
+        {
+          "name": "gpt",
+          "url": "https://github.com/topics/gpt"
+        },
+        {
+          "name": "llama",
+          "url": "https://github.com/topics/llama"
+        },
+        {
+          "name": "llm",
+          "url": "https://github.com/topics/llm"
+        },
+        {
+          "name": "mcp",
+          "url": "https://github.com/topics/mcp"
+        },
+        {
+          "name": "openai",
+          "url": "https://github.com/topics/openai"
+        },
+        {
+          "name": "python",
+          "url": "https://github.com/topics/python"
+        },
+        {
+          "name": "qq",
+          "url": "https://github.com/topics/qq"
+        },
+        {
+          "name": "qqbot",
+          "url": "https://github.com/topics/qqbot"
+        },
+        {
+          "name": "telegram",
+          "url": "https://github.com/topics/telegram"
+        }
+      ],
+      "ownerCountry": "未知"
     }
   ]
 }

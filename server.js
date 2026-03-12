@@ -401,9 +401,13 @@ async function buildInsights(items) {
     })),
   );
 
-  ownerProfiles.forEach(({ profile }) => {
+  ownerProfiles.forEach(({ owner, profile }) => {
     const country = inferCountryFromLocation(profile.location || '');
     countryCounts[country] = (countryCounts[country] || 0) + 1;
+    const item = items.find((entry) => entry.owner === owner);
+    if (item) {
+      item.ownerCountry = country;
+    }
   });
 
   const topTopics = topEntries(topicCounts, 8);

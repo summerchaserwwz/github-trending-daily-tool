@@ -22,7 +22,7 @@ async function main() {
     }),
     getCustomTop({
       language: '',
-      limit: 20,
+      limit: 100,
     }),
   ]);
 

@@ -196,6 +196,88 @@ function buildInsightSummary(insights = {}) {
   return `今天热门项目主要集中在 ${topCategory}、${topLanguage}${topicFocus ? ` 和 ${topicFocus}` : ''} 方向。`;
 }
 
+function topEntries(mapObject, limit = 6) {
+  return Object.entries(mapObject)
+    .sort((left, right) => right[1] - left[1])
+    .slice(0, limit)
+    .map(([name, count]) => ({ name, count }));
+}
+
+function deriveInsights(items = []) {
+  const topicCounts = {};
+  const keywordCounts = {};
+  const languageCounts = {};
+  const categoryCounts = {};
+  const countryCounts = {};
+
+  const keywordRules = [
+    'agent', 'ai', 'automation', 'workflow', 'claude', 'llm', 'rag', 'prompt',
+    'browser', 'speech', 'tts', 'voice', 'code', 'evaluation', 'security',
+    'prediction', 'knowledge-graph', 'chatbot', 'finance',
+  ];
+
+  items.forEach((item) => {
+    (item.topics || []).forEach((topic) => {
+      topicCounts[topic] = (topicCounts[topic] || 0) + 1;
+    });
+
+    const sample = `${item.fullName || ''} ${item.description || ''} ${item.readmeExcerpt || ''}`.toLowerCase();
+    keywordRules.forEach((keyword) => {
+      if (sample.includes(keyword)) {
+        keywordCounts[keyword] = (keywordCounts[keyword] || 0) + 1;
+      }
+    });
+
+    if (item.language) {
+      languageCounts[item.language] = (languageCounts[item.language] || 0) + 1;
+    }
+
+    if (item.chineseCard?.category) {
+      categoryCounts[item.chineseCard.category] = (categoryCounts[item.chineseCard.category] || 0) + 1;
+    }
+
+    if (item.ownerCountry) {
+      countryCounts[item.ownerCountry] = (countryCounts[item.ownerCountry] || 0) + 1;
+    }
+  });
+
+  const topics = topEntries(topicCounts, 8);
+
+  return {
+    topics: topics.length ? topics : topEntries(keywordCounts, 8),
+    languages: topEntries(languageCounts, 6),
+    categories: topEntries(categoryCounts, 6),
+    countries: topEntries(countryCounts, 6),
+  };
+}
+
+function buildCustomViewPayload(payload) {
+  const sourceItems = Array.isArray(payload.items) ? payload.items : [];
+  const limit = Number(topNSelect?.value || '20');
+  const limitedItems = sourceItems.slice(0, limit).map((item, index) => ({ ...item, rank: index + 1 }));
+  const availableLanguages = new Set(
+    limitedItems
+      .map((item) => (item.language || '').toLowerCase())
+      .filter(Boolean),
+  );
+
+  if (currentLanguage && !availableLanguages.has(currentLanguage.toLowerCase())) {
+    currentLanguage = '';
+  }
+
+  const chipInsights = deriveInsights(limitedItems);
+  const visibleItems = currentLanguage
+    ? limitedItems.filter((item) => (item.language || '').toLowerCase() === currentLanguage.toLowerCase())
+    : limitedItems;
+
+  return {
+    ...payload,
+    items: visibleItems,
+    insights: deriveInsights(visibleItems),
+    chipInsights,
+  };
+}
+
 function renderInsights(insights, note = '') {
   insightsGrid.innerHTML = '';
   const visibleCountries = (insights.countries || []).filter((item) => item.name !== '未知');
@@ -314,17 +396,11 @@ async function loadData() {
       }
     }
 
-    if (pageMode === 'custom' && topNSelect) {
-      const limit = Number(topNSelect.value || '20');
-      payload.items = (payload.items || []).slice(0, limit).map((item, index) => ({ ...item, rank: index + 1 }));
-    }
-    if (pageMode === 'custom' && currentLanguage) {
-      payload.items = (payload.items || []).filter((item) => (item.language || '').toLowerCase() === currentLanguage.toLowerCase());
-    }
+    const viewPayload = pageMode === 'custom' ? buildCustomViewPayload(payload) : payload;
 
-    renderLanguageChips(payload.insights || {});
-    renderInsights(payload.insights || {}, payload.note || '');
-    renderCards(payload);
+    renderLanguageChips(viewPayload.chipInsights || viewPayload.insights || {});
+    renderInsights(viewPayload.insights || {}, viewPayload.note || '');
+    renderCards(viewPayload);
   } catch (error) {
     renderEmpty(`加载失败：${error.message || '请稍后重试'}`);
   } finally {
