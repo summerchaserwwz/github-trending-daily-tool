@@ -45,12 +45,12 @@ npm start
 
 1. 安装依赖
 2. 抓取当天 Trending 数据
-3. 生成 `public/data/trending.json`
+3. 生成 `public/data/official-top.json`、`public/data/custom-top.json` 和兼容文件 `public/data/trending.json`
 4. 把 `public/` 发布到 GitHub Pages
 
 如果当前仓库开启了 GitHub Pages（GitHub Actions 模式），预计在线地址会是：
 
-- `https://summerchaserwwz.github.io/zwcad-batch-split-renamer/`
+- `https://summerchaserwwz.github.io/github-trending-daily-tool/`
 
 ## 关于“为什么只有 9 个”
 
